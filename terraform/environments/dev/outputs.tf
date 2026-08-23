@@ -13,3 +13,10 @@ output "private_subnet_ids" {
 output "repository_urls" {
   value = module.ecr.repository_urls
 }
+output "cluster_role_arn" {
+  value = module.iam.cluster_role_arn
+}
+
+output "node_role_arn" {
+  value = module.iam.node_role_arn
+}

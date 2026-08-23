@@ -24,3 +24,7 @@ module "ecr" {
     "web-ui"
   ]
 }
+module "iam" {
+  source = "../../modules/iam"
+}
+
