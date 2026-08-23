@@ -14,4 +14,13 @@ module "vpc" {
   ]
 }
 
+module "ecr" {
+  source = "../../modules/ecr"
 
+  repository_names = [
+    "customer-service",
+    "product-service",
+    "order-service",
+    "web-ui"
+  ]
+}
